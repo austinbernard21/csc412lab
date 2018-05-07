@@ -21,7 +21,9 @@
     window.onload = load;
         </script>
         
-<div class="video-background">
+
+        
+        <div class="video-background">
     <div class="video-foreground">
       <video autoplay muted loop id="myVideo">
   <source src="video.mp4" type="video/mp4">
@@ -29,64 +31,59 @@
     </div>
   </div>
         
-        
         <header>
             <nav>
                 <ul>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="current.html">Portfolio</a></li>
+                    <li><a href="current.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        
-        <section class="home-top">
-            <h1 class="title">Austin Bernard</h1>
-            <h2>Web-Developer and Designer</h2>
-            <a href="" class="button button-accent button-small">Check out what I'm all about</a>
-        </section>
        
         
-        <section class="home-about">
-            <div class="home-about-textbox">
+        <section class="about-top">
+            <div>
                 <h1>
                     Some stuff about me...
                 </h1>
-                <p>
-                    Some stuff here......
+                <p id="about-me-text">
+                    I am a Computer Science student at SF State. I've created some simple applications using Java, C++, and Python so far. I'm interested in data
+                    science and machine learning. Another hobby of mine is drumming and music in general and I'm hoping to create an application in the future that
+                    implements both of these together.
                 </p>
             </div>
             
         </section>
         
-        <section class="portfolio">
+        <section class="about-portfolio">
             <h1>Some of my work</h1>
             <figure>
-                <img src="">
+                <img src="https://i-cdn.phonearena.com/images/article/101043-image/Pre-register-for-Android-version-of-trivia-game-HQ-and-win-real-cash.jpg" style="height:10em; opacity:.8; float:left; padding-right: 5px;">
                 <figcaption class="port-description">
-                    <p>Project title</p>
-                    <a href="" class="button button-accent button-small">Project details
-                    </a>
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="">
-                <figcaption class="port-description">
-                    <p>Project title</p>
-                    <a href="" class="button button-accent button-small">Project details
-                    </a>
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img src="">
-                <figcaption class="port-description">
-                    <p>Project title</p>
-                    <a href="" class="button button-accent button-small">Project details
-                    </a>
+                    <p>HQ_Trivia Python Script</p>
+                    <p class="project-desc">This is a python script that runs Optical Character 
+                        Recognition on the popular live trivia game HQ to 
+                        search for most probable answer before the timer runs out.
+                        By screen-mirroring a phone with the live game running, I was able to grab the image of the question and answer interface and
+                        convert the image to computer readable text using the Tesseract OCR engine.
+                        After splitting the question and answers, the script performs a google search and performs a simple probability algorithm to find the most
+                        likely answer out of the choices.
+                        Code is on <a href="https://github.com/austinbernard21/HQ_SCRIPT">my GitHub.</a>
+                    </p>
                 </figcaption>
             </figure>
         </section>
+        <section class="about-portfolio" style="margin-top:5em;">
+        <figure>
+                <img src="https://i1.sndcdn.com/artworks-000149329928-rra8oj-t500x500.jpg" style="height:10em; opacity:.8; float:left; padding-right: 5px;">
+                <figcaption class="port-description">
+                    <p>Band Music</p>
+                    <p class="project-desc">One of the first songs my band and I made back in 2015. The song is called "Honesty". Our lead singer wrote this
+                        about his ex-girlfriend because she really sucks and we all hated her. Real good song. <a href="https://soundcloud.com/3rd-army/honesty">Check it out.</a>
+                    </p>
+                </figcaption>
+            </figure>
+    </section>
         <script src="myscript.js"></script>
     </body>
 </html>

@@ -1,9 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -25,3 +19,20 @@ function showDivs(n) {
 $(function() {
     $('body').removeClass('fade-out');
 });
+
+function changeText() {
+    var element = document.getElementById("changeText");
+    element.innerHTML = "A python script that runs Optical Character Recognition on live trivia game to search for most probable answer before timer runs out.";
+    element.style.marginRight = "15em";
+    element.style.marginLeft = "15em";
+    element.style.border = "none";
+}
+
+
+function changeText1() {
+    var element = document.getElementById("changeText1");
+    element.innerHTML = "Just some song from my band.";
+    element.style.marginRight = "15em";
+    element.style.marginLeft = "15em";
+    element.style.border = "none";
+}
